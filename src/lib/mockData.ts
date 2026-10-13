@@ -1,0 +1,178 @@
+import { Track, Album, Artist, Playlist } from "@/types/music";
+
+export const MOCK_ARTISTS: Artist[] = [
+  {
+    id: "artist-1",
+    name: "Daft Punk",
+    avatar_url: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=300&auto=format&fit=crop&q=80",
+    bio: "Duo icônico francês de música eletrônica formado por Thomas Bangalter e Guy-Manuel de Homem-Christo.",
+    verified: true,
+    monthly_listeners: 24892300,
+  },
+  {
+    id: "artist-2",
+    name: "The Weeknd",
+    avatar_url: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=300&auto=format&fit=crop&q=80",
+    bio: "Abel Makkonen Tesfaye, conhecido como The Weeknd, cantor e produtor musical canadense.",
+    verified: true,
+    monthly_listeners: 104520100,
+  },
+  {
+    id: "artist-3",
+    name: "Gorillaz",
+    avatar_url: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=300&auto=format&fit=crop&q=80",
+    bio: "Banda virtual britânica criada em 1998 por Damon Albarn e Jamie Hewlett.",
+    verified: true,
+    monthly_listeners: 31200400,
+  },
+];
+
+export const MOCK_TRACKS: Track[] = [
+  {
+    id: "track-1",
+    title: "Midnight City Groove",
+    album: {
+      id: "album-1",
+      title: "Neon Odyssey",
+      cover_url: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80",
+    },
+    artists: [MOCK_ARTISTS[0]],
+    duration_ms: 224000,
+    track_number: 1,
+    audio_url: "https://cdn.freesound.org/previews/612/612056_5674468-lq.mp3",
+    explicit: false,
+    play_count: 85210340,
+  },
+  {
+    id: "track-2",
+    title: "Synthwave Horizons",
+    album: {
+      id: "album-1",
+      title: "Neon Odyssey",
+      cover_url: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80",
+    },
+    artists: [MOCK_ARTISTS[0], MOCK_ARTISTS[1]],
+    duration_ms: 198000,
+    track_number: 2,
+    audio_url: "https://cdn.freesound.org/previews/567/567246_1648170-lq.mp3",
+    explicit: true,
+    play_count: 42109400,
+  },
+  {
+    id: "track-3",
+    title: "Blinding Eclipse",
+    album: {
+      id: "album-2",
+      title: "After Hours Twilight",
+      cover_url: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=500&auto=format&fit=crop&q=80",
+    },
+    artists: [MOCK_ARTISTS[1]],
+    duration_ms: 215000,
+    track_number: 1,
+    audio_url: "https://cdn.freesound.org/previews/612/612055_5674468-lq.mp3",
+    explicit: false,
+    play_count: 142800310,
+  },
+  {
+    id: "track-4",
+    title: "Starlight Rendezvous",
+    album: {
+      id: "album-2",
+      title: "After Hours Twilight",
+      cover_url: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=500&auto=format&fit=crop&q=80",
+    },
+    artists: [MOCK_ARTISTS[1]],
+    duration_ms: 245000,
+    track_number: 2,
+    audio_url: "https://cdn.freesound.org/previews/530/530415_1648170-lq.mp3",
+    explicit: false,
+    play_count: 73491200,
+  },
+  {
+    id: "track-5",
+    title: "Feel Good Cybernetic",
+    album: {
+      id: "album-3",
+      title: "Demon Days 2099",
+      cover_url: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=500&auto=format&fit=crop&q=80",
+    },
+    artists: [MOCK_ARTISTS[2]],
+    duration_ms: 232000,
+    track_number: 1,
+    audio_url: "https://cdn.freesound.org/previews/515/515823_1648170-lq.mp3",
+    explicit: false,
+    play_count: 98124990,
+  },
+  {
+    id: "track-6",
+    title: "Clint Eastwood (Retro Reboot)",
+    album: {
+      id: "album-3",
+      title: "Demon Days 2099",
+      cover_url: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=500&auto=format&fit=crop&q=80",
+    },
+    artists: [MOCK_ARTISTS[2]],
+    duration_ms: 260000,
+    track_number: 2,
+    audio_url: "https://cdn.freesound.org/previews/506/506546_1648170-lq.mp3",
+    explicit: true,
+    play_count: 87402110,
+  },
+];
+
+export const MOCK_ALBUMS: Album[] = [
+  {
+    id: "album-1",
+    title: "Neon Odyssey",
+    artist: MOCK_ARTISTS[0],
+    cover_url: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80",
+    release_date: "2024-04-12",
+    total_tracks: 12,
+  },
+  {
+    id: "album-2",
+    title: "After Hours Twilight",
+    artist: MOCK_ARTISTS[1],
+    cover_url: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=500&auto=format&fit=crop&q=80",
+    release_date: "2023-11-20",
+    total_tracks: 14,
+  },
+  {
+    id: "album-3",
+    title: "Demon Days 2099",
+    artist: MOCK_ARTISTS[2],
+    cover_url: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=500&auto=format&fit=crop&q=80",
+    release_date: "2024-01-18",
+    total_tracks: 10,
+  },
+];
+
+export const MOCK_PLAYLISTS: Playlist[] = [
+  {
+    id: "playlist-1",
+    title: "Today's Top Hits",
+    description: "Os maiores sucessos que estão dominando o mundo agora mesmo.",
+    cover_url: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=500&auto=format&fit=crop&q=80",
+    is_public: true,
+    user_id: "spotify-curator",
+    tracks: [MOCK_TRACKS[0], MOCK_TRACKS[2], MOCK_TRACKS[4]],
+  },
+  {
+    id: "playlist-2",
+    title: "Cyberpunk & Synthwave",
+    description: "Sintetizadores analógicos, graves pulsantes e noites neon sem fim.",
+    cover_url: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=500&auto=format&fit=crop&q=80",
+    is_public: true,
+    user_id: "spotify-curator",
+    tracks: [MOCK_TRACKS[1], MOCK_TRACKS[0], MOCK_TRACKS[5]],
+  },
+  {
+    id: "playlist-3",
+    title: "Músicas Curtidas",
+    description: "Sua coleção pessoal de faixas favoritadas.",
+    cover_url: "https://misc.scdn.co/liked-songs/liked-songs-640.png",
+    is_public: false,
+    user_id: "current-user",
+    tracks: MOCK_TRACKS,
+  },
+];
