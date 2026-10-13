@@ -14,6 +14,13 @@
 </p>
 
 <p align="center">
+  <a href="https://librify-nine.vercel.app/" target="_blank">
+    <img alt="Testar na Web" src="https://img.shields.io/badge/▶_TESTAR_NA_WEB-librify--nine.vercel.app-1ed760?style=for-the-badge&logo=vercel&logoColor=white&labelColor=121212">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://librify-nine.vercel.app/"><img alt="Deploy Vercel" src="https://img.shields.io/badge/Live%20Web%20App-Online-1ed760?style=flat-square&logo=vercel&logoColor=white"></a>
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-1ed760?style=flat-square"></a>
   <img alt="Premium Unlocked" src="https://img.shields.io/badge/Spotify%20Premium-100%25%20Free%20%26%20Unlocked-facc15?style=flat-square&logo=spotify&logoColor=black">
   <img alt="Next.js 15" src="https://img.shields.io/badge/Next.js%2015-React%2019-000000?style=flat-square&logo=next.js&logoColor=white">
@@ -24,6 +31,7 @@
 </p>
 
 <p align="center">
+  <a href="https://librify-nine.vercel.app/"><b>🚀 Testar na Web</b></a> ·
   <a href="#spotify-vs-librify"><b>Spotify vs Librify</b></a> ·
   <a href="#architecture"><b>Architecture</b></a> ·
   <a href="#audio-engine"><b>Audio Engine</b></a> ·
@@ -150,6 +158,11 @@ For deployments that want user profiles, collaborative playlists, and saved libr
 ---
 
 ## 🚀 Get Started
+
+> [!TIP]
+> ### 🌐 Testar Diretamente na Web (Sem Instalar Nada)
+> A versão de produção já está disponível e hospedada na Vercel:
+> 👉 **[https://librify-nine.vercel.app/](https://librify-nine.vercel.app/)**
 
 ### Prerequisites
 - **Node.js** 18+ (Node.js 20 LTS or 22 recommended)
